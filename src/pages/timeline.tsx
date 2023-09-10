@@ -402,14 +402,83 @@ High-Performing Caching Infrastructure"
                   <ArrowIcon />
                 </button>
               </div>
+              {/* start */}
             </div>
           </div>
+          <Authlite />
         </div>
       </div>
     </>
   );
 }
+function Authlite() {
+  return (
+    <div className="timeline-radial-gradient">
+      <div className=" pl-40 pt-40">
+        <div className="flex flex-col">
+          <div className="flex flex-row">
+            <div className="font-inter  pt-6 text-5xl text-white">
+              Auth-Lite
+            </div>
+            <div className="pr-16"></div>
+            <img className="gap-16" src="/timeline/cable.svg" alt="/" />
+            <div className="pr-40"></div>
 
+            <div className="pl-16 text-3xl text-white">
+              Design,
+              <br />
+              To save Time{" "}
+            </div>
+            {/* first row ends here */}
+          </div>
+          <div className="flex flex-row">
+            <div className="pt-16 text-2xl text-white">
+              A thoughtfully designed, fully managed system created to <br />
+              supercharge the development of enterprise-grade <br />
+              applications. It provides top-tier security and token <br />
+              management, offers customizable UI options, all backed <br />
+              by high-powered caching servers. With Auth-Lite, we're <br />
+              putting developers first on their journey towards <br />
+              accelerated, hassle-free development.
+            </div>
+            <img src="/timeline/auth-lite.svg" alt="" className="h-90 w-90  " />
+          </div>
+
+          <div className="pt-16 text-2xl text-white">
+            Auth-Lite: Empowering Developers with Elevated Efficiency
+          </div>
+          <div className="pb-16 "></div>
+          <div className=" border-[1px] border-t border-gray-300 "></div>
+          <div className="pt-16 text-2xl text-white">
+            Auth-Lite: Empowering Developers with Elevated Efficiency
+          </div>
+          <div className="pb-16 "></div>
+          <div className="flex flex-row">
+            <button
+              className=" flex  w-80 
+            items-center justify-center gap-2 rounded-full border-2
+            border-white bg-black  py-2  text-xl font-bold  text-white"
+            >
+              Learn more about Connect
+              <ArrowIcon />
+            </button>
+            <div className="pr-16"></div>
+            <button
+              className=" flex w-60 items-center 
+            justify-center gap-2 rounded-full bg-white py-2 
+             text-xl  font-bold text-black"
+            >
+              Let’s Get Started
+              <ArrowIcon />
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* <div className="font-inter pt-6 text-5xl text-white">Auth-Lite</div>
+            <img className="gap-16" src="/timeline/cable.svg" alt="/" /> */}
+    </div>
+  );
+}
 function GradientCard({
   logo,
   number,

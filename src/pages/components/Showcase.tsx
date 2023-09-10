@@ -197,7 +197,44 @@ function Showcase() {
             }
             className="  showcase-5 col-span-full w-full lg:col-span-6  "
           >
-            <div className="relative hidden   h-[205px] w-full items-center justify-center bg-transparent sm:flex "></div>
+            <div className="showcase-3-width relative -mx-10    flex h-[340px] w-full items-center justify-center bg-transparent ">
+              <div className="h">
+                <span className="text-[32px] font-medium leading-7 text-white">
+                  Never
+                </span>
+                <span className="text-[32px] font-light leading-7 text-white">
+                  {" "}
+                  more than a{" "}
+                </span>
+                <span className="text-[32px] font-medium leading-7 text-white">
+                  Class
+                </span>
+              </div>
+            </div>
+
+            {/* things to make the background */}
+            <img
+              src="/showcase/code-section/cone.svg"
+              className="absolute bottom-[40%] left-0 "
+              alt=""
+            />
+            <img
+              src="/showcase/code-section/circle-1.svg"
+              className="absolute bottom-0 left-0 "
+              alt=""
+            />
+
+            <img
+              src="/showcase/code-section/circle-2.svg"
+              className="absolute bottom-28 left-20 "
+              alt=""
+            />
+
+            <img
+              src="/showcase/code-section/circle-3.svg"
+              className="absolute right-0 top-1/2 -translate-y-1/2 "
+              alt=""
+            />
           </ShowcaseCard>
         </div>
 

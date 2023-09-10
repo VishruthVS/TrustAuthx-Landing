@@ -227,8 +227,7 @@ body {
   }
 
   .showcase-5 {
-    background: url("/showcase/5.svg");
-    background-size: cover;
+    background: linear-gradient(238deg, #60f 0%, #f700ff 100%);
     box-shadow:
       0px 10px 50px -2.5px rgba(0, 0, 0, 0.1),
       0px 2.28853px 11.4427px -1.66667px rgba(0, 0, 0, 0.1),

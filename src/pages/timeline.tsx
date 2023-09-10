@@ -13,8 +13,8 @@ import Carousel from "./components/Timeline/CarouselSlider";
 function timeline() {
   return (
     <>
-      <div className="flex px-40">
-        <div className="flex flex-col items-center justify-center">
+      <div className="flex px-12 py-12 2xl:py-0 2xl:pl-44 2xl:pr-[130px]">
+        <div className="flex max-w-[160px] flex-col items-center justify-center">
           <img src="/timeline/first.svg" alt="" />
 
           <img src="/timeline/8-icon.svg" alt="" />
@@ -30,29 +30,28 @@ function timeline() {
           <img src="/timeline/6.svg" alt="" />
         </div>
 
-        <div className="mt-[750px]">
+        <div className="mt-[750px] flex-1">
           <div className=" flex flex-col gap-9">
             <div className="text-4xl font-bold  text-black">Overview</div>
 
             <div className=" px-6">
-              <span className="text-7xl font-bold  text-indigo-400">
+              <span className="text-6xl font-bold  text-indigo-400">
                 Embed security into the developer workflow.
-                <br />
+                <br className="hidden 2xl:flex" />
               </span>
-              <span className="text-7xl font-bold  text-black">
+              <span className="text-6xl font-bold  text-black">
                 With GitHub, developers can secure their
-                <br />
+                <br className="hidden 2xl:flex" />
                 code in minutes and organizations can
-                <br />
+                <br className="hidden 2xl:flex" />
                 automatically comply with regulations.
               </span>
             </div>
           </div>
 
-          <div className="ml-10 flex h-[70%] flex-1 justify-between ">
-            <div className="mt-auto flex flex-col gap-[550px]">
+          <div className="flex w-full flex-1 flex-col items-center justify-between  xl:flex-row 2xl:ml-10 ">
+            <div className="mt-[390px] flex flex-col gap-[550px]">
               <Information
-                buttonbg
                 preHeader="Trim Costs, Boost Efficiency"
                 buttonLink=""
                 header="Save Time and Money with TrustAuthx 
@@ -60,34 +59,57 @@ function timeline() {
                 ButtonText="Let’s Get Started It’s Free"
               >
                 <div
-                  className=" mt-20 max-w-[600px] text-xl font-bold leading-7 text-neutral-600
+                  className=" mt-20 max-w-[513px] text-lg font-bold leading-7 text-neutral-600
 "
                 >
-                  TrustAuthx not only simplifies your user, token and session
-                  management but also trims your expenses significantly. Say
-                  goodbye to costly alternatives that can set you back. With
-                  AuthLite, you'll save valuable time and also enjoy over 65% in
-                  savings. It's a win-win for your efficiency and your budget.
+                  <p>
+                    TrustAuthx not only simplifies your user, token and session
+                    management but also trims your expenses significantly. Say
+                    goodbye to costly alternatives that can set you back. With
+                    AuthLite, you'll save valuable time and also enjoy over 65%
+                    in savings. It's a win-win for your efficiency and your
+                    budget.
+                  </p>
                 </div>
               </Information>
 
               <Information
-                buttonbg
-                preHeader="Trim Costs, Boost Efficiency"
+                preHeader='TrustAuthx Log-"On"'
                 buttonLink=""
-                header="Save Time and Money with TrustAuthx 
-                Auth-Lite"
+                header='Drive faster Conversions with Auth-Lite "Log-On" 
+                yes "on"'
+                customButton={
+                  <div className="mt-14 flex gap-7">
+                    <button className="mt-6 flex w-64 items-center justify-center gap-2 rounded-[18711.455px] border-[1.1px] border-[#DDD] bg-black py-2  font-bold text-white">
+                      Learn more about Connect
+                      <ArrowIcon />
+                    </button>
+                    <button className="mt-6 flex w-44 items-center justify-center gap-2 rounded-[4807.455px] border-[1.1px] border-[#DDD] bg-white py-2 font-bold text-black">
+                      Let's get started
+                      <ArrowIcon />
+                    </button>
+                  </div>
+                }
                 ButtonText="Let’s Get Started It’s Free"
               >
                 <div
-                  className=" mt-20 max-w-[600px] text-xl font-bold leading-7 text-neutral-600
+                  className=" mt-20 max-w-[513px] text-lg font-bold leading-7 text-neutral-600
 "
                 >
-                  TrustAuthx not only simplifies your user, token and session
-                  management but also trims your expenses significantly. Say
-                  goodbye to costly alternatives that can set you back. With
-                  AuthLite, you'll save valuable time and also enjoy over 65% in
-                  savings. It's a win-win for your efficiency and your budget.
+                  <p>
+                    A Smoother Signup Experience. We've re-imagined the signup
+                    process, significantly reducing the time it takes,
+                    benefiting everyone involved, and ultimately enhancing
+                    conversion rates. Say goodbye to lengthy signups and hello
+                    to quicker results.
+                  </p>
+                  <div className="my-6 h-[1px] border border-gray-300"></div>
+                  <p className="text-[#2C2C2C]">
+                    No More Separate Sign-Up and Log-In Processes. Our
+                    straightforward 'Log-On' eliminates the need for separate
+                    sign-up and log-in steps, making access swift and
+                    hassle-free.
+                  </p>{" "}
                 </div>
               </Information>
             </div>
@@ -139,9 +161,9 @@ function timeline() {
         </div>
       </div>
 
-      <div className="timeline-radial-gradient flex px-40">
-        <div className="flex flex-col items-center justify-center">
-          <div className="relative -my-24">
+      <div className="timeline-radial-gradient flex flex-1 px-12 py-12 2xl:py-0 2xl:pl-44 2xl:pr-[130px]">
+        <div className="flex max-w-[160px] flex-col items-center justify-center">
+          <div className="relative ">
             <img src="/timeline/glow.svg" className=" " alt="" />
 
             <img
@@ -163,156 +185,206 @@ function timeline() {
         </div>
         {/* required
          */}
+
         <div className=" flex flex-col gap-9 py-2">
-          <div className=" px-6">
+          <div className="mt-24 px-6">
             <span className="text-6xl font-bold  text-[#90E900]">
               LLMAI, Transformer Model for Cybersecurity:
             </span>
             <span className="text-6xl font-bold  text-white">
               Enable real-time inference
-              <br />
+              <br className="hidden 2xl:flex" />
               on extensive telemetry data, including raw
-              <br />
+              <br className="hidden 2xl:flex" />
               packets, to swiftly detect & respond to live
-              <br />
+              <br className="hidden 2xl:flex" />
               threats.
             </span>
+
+            <button className="mt-14 flex w-64 items-center justify-center gap-2 rounded-[14807.455px] border-[1.1px] border-[#DDD] bg-black py-2 font-bold text-white">
+              Request Enterprise Access
+              <ArrowIcon />
+            </button>
           </div>
           {/* button */}
 
-          <button className="mt-6 flex w-64 items-center justify-center gap-2 rounded-[14807.455px] border-[1.1px] border-[#DDD] bg-black py-2 font-bold text-white">
-            Lets get started
-            <ArrowIcon />
-          </button>
-          <div className=" py-48"></div>
           {/* placing next to each other */}
 
-          <div className="flex-column flex gap-80">
-            <Information
-              whiteText
-              preHeader="Maximize Speed"
-              buttonbg
-              buttonLink=""
-              header="Get access to 
-High-Performing Caching Infrastructure"
-              ButtonText="Let’s Get Started It’s Free"
-            >
-              <div
-                className=" mt-20 max-w-[600px] text-xl font-bold leading-7 text-white
-"
+          <div className=" flex  flex-1 flex-col items-center justify-between xl:flex-row 2xl:ml-10 ">
+            <div className="mt-[325px] flex flex-col justify-between gap-[550px] 2xl:gap-0">
+              <Information
+                whiteText
+                preHeader="Maximize Speed"
+                buttonbg
+                buttonLink=""
+                header="Get access to 
+  High-Performing Caching Infrastructure"
+                ButtonText="Let’s Get Started It’s Free"
               >
-                Speed matters when its about authentication, conversion, token
-                maintenance or security with TrustAuthx Auth-lite High
-                performing caching infrastructure get all your data accessed at
-                the speed of internet .
-              </div>
-            </Information>
-            <div className="flex-column flex items-center">
-              <img
-                src="/timeline/cache.svg"
-                alt="cache"
-                className="h-[614.023px] w-[537.729px]"
-              />
+                <div
+                  className=" mt-20 max-w-[513px] text-lg font-bold leading-7
+                   text-white
+"
+                >
+                  Speed matters when its about authentication, conversion, token
+                  maintenance or security with TrustAuthx Auth-lite High
+                  performing caching infrastructure get all your data accessed
+                  at the speed of internet .
+                </div>
+              </Information>
+
+              <Information
+                preHeader="Integrate in 2 min "
+                buttonLink=""
+                whiteText
+                header="Resembling Auth 2.0, our system exemplifies the beauty of standardized simplicity."
+                customButton={
+                  <div className="mt-[51px] flex gap-10 ">
+                    <button className="mt-6 flex w-64 items-center justify-center gap-2 rounded-[18711.455px] border-[1.1px] border-[#DDD] bg-black py-2  font-bold text-white">
+                      Learn more about Connect
+                      <ArrowIcon />
+                    </button>
+                    <button className="mt-6 flex w-[180px] items-center justify-center gap-2 rounded-[4807.455px] border-[1.1px] border-[#DDD] bg-white py-2 font-bold text-black">
+                      Let's get started
+                      <ArrowIcon />
+                    </button>
+                  </div>
+                }
+                ButtonText="Let’s Get Started It’s Free"
+              >
+                <div
+                  className="mt-6 flex max-w-[513px] flex-col  gap-[52px] text-lg font-bold leading-7 text-neutral-600
+"
+                >
+                  <p className="text-lg font-semibold  text-white">
+                    Embrace the elegance of standardized simplicity, making
+                    security and user access straightforward. With its user-
+                    friendly approach, navigating authentication and
+                    authorization has never been easier.
+                  </p>
+
+                  <div>
+                    <span className=" text-[#E0E0E0] ">
+                      Extract data from other Auth2.O sources
+                    </span>
+
+                    <div className="my-6 border border-[#BABABA]"></div>
+
+                    <span className="text-[#E0E0E0] ">
+                      Supports analytical & Dependency workflows
+                    </span>
+                  </div>
+                </div>
+              </Information>
+
+              <Information
+                whiteText
+                preHeader="Save your Resources"
+                ButtonText=""
+                className="mb-12 2xl:mb-64"
+                customButton={<></>}
+                buttonLink=""
+                header="Get Benefited with large Co-Relational Data warehouses  "
+              >
+                <div
+                  className=" mt-20 max-w-[513px] text-lg font-bold leading-7
+                   text-[#E7E7E7]
+"
+                >
+                  Make your PlanetScale data accessible across your organization
+                  by safely extracting and loading data from Planet into other
+                  databases, such as BigQuery, Snowflake, or Redshift.
+                </div>
+              </Information>
             </div>
-          </div>
-          {/* next part */}
-          <div className="py-56"></div>
-          <div className="flex-column flex gap-80">
-            <div className=" px-6">
-              <span className="text-3xl font-semibold  text-[#E1E1E1]">
-                Integrate in 2 min
-                <br />
-              </span>
-              <span className="text-5xl font-bold  text-white">
-                Resembling Auth 2.0,
-                <br />
-                our system exemplifies
-                <br />
-                the beauty of
-                <br />
-                standardized simplicity.
-                <br />
-                <br />
-              </span>
-              <span className="text-2xl font-semibold text-white">
-                Embrace the elegance of standardized simplicity, making
-                <br />
-                security and user access straightforward. With its user-
-                <br />
-                friendly approach, navigating authentication and authorization
-                <br />
-                has never been easier.
-                <br />
-              </span>
-              <div className="py-10"></div>
-              <span className="text-2xl text-white">
-                Extract data from other Auth2.O sources
-              </span>
-              <div className="py-8"></div>
-              <div className="border border-gray-300"></div>
-              <div className="py-8"></div>
-              <span className="text-2xl text-white">
-                Supports analytical & Dependency workflows
-              </span>
-              <div className="flex-column flex gap-10 ">
-                <button className="mt-6 flex w-64 items-center justify-center gap-2 rounded-[18711.455px] border-[1.1px] border-[#DDD] bg-black py-2  font-bold text-white">
-                  Learn more about Connect
-                  <ArrowIcon />
-                </button>
-                <button className="mt-6 flex w-64 items-center justify-center gap-2 rounded-[4807.455px] border-[1.1px] border-[#DDD] bg-white py-2 font-bold text-black">
-                  Let's get started
-                  <ArrowIcon />
-                </button>
-              </div>
-            </div>
-            {/* the right side svg */}
-            <TimelineCard
-              footerButtonText="See Pricing"
-              header={"Reduce Auth Development Time &"}
-              footerLink={""}
-              footerText="TrustAuthx Auth-lite offers 
+
+            {/* next part */}
+            <div className=" mt-44 flex flex-col gap-[300px] ">
+              <TimelineCard
+                footerButtonText="See Pricing"
+                header={"Reduce Auth Development Time &"}
+                footerLink={""}
+                footerText="TrustAuthx Auth-lite offers 
               a fully managed, user-friendly solutionfor system security,
                saving you over 90% compared to similar systems that typically cost
                 around $500/month."
-            >
-              <div
-                className="mt-2 bg-gradient-to-r from-white to-black  bg-clip-text
-               text-center text-4xl font-bold  text-transparent"
               >
-                Save Cost up-to
+                <div
+                  className="mt-2 bg-gradient-to-r from-white to-black  bg-clip-text
+               text-center text-4xl font-bold  text-transparent"
+                >
+                  Save Cost up-to
+                </div>
+
+                <div className="mt-7 flex items-center justify-center gap-16 ">
+                  <PercentageSVG>90%</PercentageSVG>
+                  <PercentageSVGSecondTimeline>65%</PercentageSVGSecondTimeline>
+                </div>
+              </TimelineCard>
+
+              <div className="  flex flex-col items-center justify-center gap-12 rounded-2xl bg-black  shadow-lg shadow-zinc-800 ">
+                <div className="max-w-[490px] py-12   ">
+                  <div className="   text-center">
+                    <span className="bg-gradient-to-r  from-yellow-400 to-orange-500 bg-clip-text text-4xl font-bold leading-10 text-transparent">
+                      Get Speed & Supercharge your App with high-performing
+                      Caching Servers
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-3 pb-6">
+                  <img src="/timeline/speedCard/1.svg" alt="" />
+                  <img src="/timeline/speedCard/2.svg" alt="" />
+                  <img src="/timeline/speedCard/3.svg" alt="" />
+                  <img src="/timeline/speedCard/4.svg" alt="" />
+                </div>
               </div>
 
-              <div className="mt-7 flex items-center justify-center gap-16 ">
-                <PercentageSVG>90%</PercentageSVG>
-                <PercentageSVGSecondTimeline>65%</PercentageSVGSecondTimeline>
+              <div className="shad rounded-2xl bg-black shadow-lg shadow-zinc-800 ">
+                <img src="/timeline/lastcard.svg" className="" alt="" />
+
+                <div className=" rounded-b-2xl bg-[#1A1A1A] px-12 py-7">
+                  <div className=" w-96 text-lg font-bold leading-loose text-neutral-50">
+                    Say goodbye to Multiple validation of same user. Our managed
+                    infra. helps to save large amount of validation resource
+                    using a CDW.
+                  </div>
+
+                  <button
+                    className="mt-6 flex items-center justify-center 
+            gap-2 rounded-full border-white  py-1 font-bold text-white"
+                  >
+                    Data Wrenching <ArrowIcon />
+                  </button>
+                </div>
               </div>
-            </TimelineCard>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex px-40">
-        <div className="flex flex-col items-center justify-center">
+      <div className="flex px-12 2xl:pl-44 2xl:pr-[130px]">
+        <div className="flex max-w-[160px] flex-col items-center ">
           <img src="/timeline/last-icon.svg" alt="" />
           <img src="/timeline/last.svg" />
         </div>
 
-        <div className=" mt-40 flex flex-col gap-9">
+        <div className=" mt-40 flex flex-1 flex-col gap-9">
           <div className="text-4xl font-bold  text-black">
             Checkout What They Say?{" "}
           </div>
 
           <div className="px-6">
-            <span className="text-7xl font-bold  text-indigo-400">
+            <span className="text-[68px] font-bold leading-[75.344px] tracking-[-2px]  text-indigo-400  2xl:whitespace-nowrap">
               Embed security into the developer workflow.
-              <br />
+              <br className="hidden 2xl:flex" />
             </span>
-            <span className="text-7xl font-bold  text-black">
+            <span className="text-[68px] font-bold leading-[75.344px]  tracking-[-2px]  text-black">
               With GitHub, developers can secure.
             </span>
           </div>
 
-          <div className="mt-28 flex items-center justify-between  gap-4 px-6 pb-6 ">
+          <div className="mt-28 flex flex-col  items-center  justify-between gap-14 px-6  pb-6 xl:flex-row 2xl:gap-6">
             <Carousel>
               {[
                 <GradientCard
@@ -361,7 +433,7 @@ High-Performing Caching Infrastructure"
             </Carousel>
 
             <div className=" flex flex-col  gap-16">
-              <div className="  text-2xl font-bold leading-snug text-black">
+              <div className="  text-[22px] font-bold leading-snug text-black">
                 Make your PlanetScale data accessible across your
                 <br />
                 organization by safely extracting and loading data from

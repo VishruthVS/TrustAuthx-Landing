@@ -405,6 +405,7 @@ High-Performing Caching Infrastructure"
               {/* start */}
             </div>
           </div>
+          {/* The function is defined below */}
           <Authlite />
         </div>
       </div>
